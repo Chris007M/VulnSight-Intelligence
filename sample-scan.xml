@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<nmaprun scanner="nmap" args="nmap -sV -O -oX sample-scan.xml 192.168.1.0/24" start="1700000000" version="7.94">
+  <host status="up">
+    <address addr="192.168.1.10" addrtype="ipv4"/>
+    <hostnames>
+      <hostname name="gateway-srv.local" type="user"/>
+    </hostnames>
+    <ports>
+      <port protocol="tcp" portid="21">
+        <state state="open"/>
+        <service name="ftp" product="vsftpd" version="3.0.3"/>
+      </port>
+      <port protocol="tcp" portid="22">
+        <state state="open"/>
+        <service name="ssh" product="OpenSSH" version="8.9p1"/>
+      </port>
+      <port protocol="tcp" portid="80">
+        <state state="open"/>
+        <service name="http" product="Apache httpd" version="2.4.52"/>
+      </port>
+    </ports>
+  </host>
+  <host status="up">
+    <address addr="192.168.1.25" addrtype="ipv4"/>
+    <hostnames>
+      <hostname name="legacy-db.local" type="user"/>
+    </hostnames>
+    <ports>
+      <port protocol="tcp" portid="23">
+        <state state="open"/>
+        <service name="telnet" product="Linux telnetd" version="1.2"/>
+      </port>
+      <port protocol="tcp" portid="445">
+        <state state="open"/>
+        <service name="microsoft-ds" product="Windows Server 2012 SMB" version="1.0"/>
+      </port>
+      <port protocol="tcp" portid="3306">
+        <state state="open"/>
+        <service name="mysql" product="MySQL" version="5.7.34"/>
+      </port>
+    </ports>
+  </host>
+  <host status="up">
+    <address addr="192.168.1.50" addrtype="ipv4"/>
+    <hostnames>
+      <hostname name="win-rdp-host.local" type="user"/>
+    </hostnames>
+    <ports>
+      <port protocol="tcp" portid="3389">
+        <state state="open"/>
+        <service name="ms-wbt-server" product="Microsoft Remote Desktop" version="10.0"/>
+      </port>
+      <port protocol="tcp" portid="6379">
+        <state state="open"/>
+        <service name="redis" product="Redis key-value store" version="6.0.9"/>
+      </port>
+    </ports>
+  </host>
+</nmaprun>

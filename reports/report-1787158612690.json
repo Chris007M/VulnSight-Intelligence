@@ -1,0 +1,161 @@
+{
+  "reportId": "report-1787158612690",
+  "timestamp": "2026-08-19T16:56:52.690Z",
+  "summary": {
+    "totalHosts": 1,
+    "totalRisks": 7,
+    "critical": 2,
+    "high": 0,
+    "medium": 5,
+    "low": 0,
+    "overallCvssScore": 8.5
+  },
+  "details": [
+    {
+      "ip": "197.243.25.55",
+      "hostname": "whm.cp.040.mb.rw",
+      "cvssScore": 8.5,
+      "severity": "High",
+      "risks": [
+        {
+          "port": "80",
+          "protocol": "tcp",
+          "service": "http",
+          "product": "Apache httpd",
+          "version": "",
+          "risk": "Critical",
+          "cvss": 9,
+          "cves": [
+            {
+              "id": "CVE-2023-44487",
+              "severity": "High",
+              "cvss": 7.5,
+              "description": "HTTP/2 Rapid Reset attack vulnerability leading to Denial of Service (DoS)."
+            },
+            {
+              "id": "CVE-2021-41773",
+              "severity": "Critical",
+              "cvss": 9,
+              "description": "Apache HTTP Server path traversal and remote code execution vulnerability."
+            }
+          ],
+          "recommendation": "Enforce HTTPS (TLS 1.3) and redirect cleartext HTTP traffic"
+        },
+        {
+          "port": "110",
+          "protocol": "tcp",
+          "service": "pop3",
+          "product": "Dovecot pop3d",
+          "version": "",
+          "risk": "Medium",
+          "cvss": 5.3,
+          "cves": [
+            {
+              "id": "CVE-2025-7003",
+              "severity": "Medium",
+              "cvss": 5.3,
+              "description": "Potential security exposure or legacy configuration detected on service pop3."
+            }
+          ],
+          "recommendation": "Inspect service pop3 configuration and apply security patches."
+        },
+        {
+          "port": "143",
+          "protocol": "tcp",
+          "service": "imap",
+          "product": "Dovecot imapd",
+          "version": "",
+          "risk": "Medium",
+          "cvss": 5.3,
+          "cves": [
+            {
+              "id": "CVE-2025-1367",
+              "severity": "Medium",
+              "cvss": 5.3,
+              "description": "Potential security exposure or legacy configuration detected on service imap."
+            }
+          ],
+          "recommendation": "Inspect service imap configuration and apply security patches."
+        },
+        {
+          "port": "443",
+          "protocol": "tcp",
+          "service": "http",
+          "product": "Apache httpd",
+          "version": "",
+          "risk": "Critical",
+          "cvss": 9,
+          "cves": [
+            {
+              "id": "CVE-2023-44487",
+              "severity": "High",
+              "cvss": 7.5,
+              "description": "HTTP/2 Rapid Reset attack vulnerability leading to Denial of Service (DoS)."
+            },
+            {
+              "id": "CVE-2021-41773",
+              "severity": "Critical",
+              "cvss": 9,
+              "description": "Apache HTTP Server path traversal and remote code execution vulnerability."
+            }
+          ],
+          "recommendation": "Enforce HTTPS (TLS 1.3) and redirect cleartext HTTP traffic"
+        },
+        {
+          "port": "465",
+          "protocol": "tcp",
+          "service": "smtps",
+          "product": "",
+          "version": "",
+          "risk": "Medium",
+          "cvss": 5.3,
+          "cves": [
+            {
+              "id": "CVE-2025-3606",
+              "severity": "Medium",
+              "cvss": 5.3,
+              "description": "Potential security exposure or legacy configuration detected on service smtps."
+            }
+          ],
+          "recommendation": "Inspect service smtps configuration and apply security patches."
+        },
+        {
+          "port": "587",
+          "protocol": "tcp",
+          "service": "submission",
+          "product": "",
+          "version": "",
+          "risk": "Medium",
+          "cvss": 5.3,
+          "cves": [
+            {
+              "id": "CVE-2025-9065",
+              "severity": "Medium",
+              "cvss": 5.3,
+              "description": "Potential security exposure or legacy configuration detected on service submission."
+            }
+          ],
+          "recommendation": "Inspect service submission configuration and apply security patches."
+        },
+        {
+          "port": "993",
+          "protocol": "tcp",
+          "service": "imap",
+          "product": "Dovecot imapd",
+          "version": "",
+          "risk": "Medium",
+          "cvss": 5.3,
+          "cves": [
+            {
+              "id": "CVE-2025-8873",
+              "severity": "Medium",
+              "cvss": 5.3,
+              "description": "Potential security exposure or legacy configuration detected on service imap."
+            }
+          ],
+          "recommendation": "Inspect service imap configuration and apply security patches."
+        }
+      ]
+    }
+  ]
+}

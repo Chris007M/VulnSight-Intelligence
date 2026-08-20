@@ -1,0 +1,31 @@
+vulnsight/
+│
+├── backend/
+│   ├── server.js
+│   ├── routes/
+│   │   ├── upload.js
+│   │   └── auth.js
+│   ├── services/
+│   │   ├── xmlParser.js
+│   │   ├── riskAnalyzer.js
+│   │   ├── cveLookup.js
+│   │   └── reportGenerator.js
+│   ├── utils/
+│   │   └── scoring.js
+│   └── data/
+│       └── riskRules.json
+│
+├── frontend/
+│   ├── index.html
+│   ├── dashboard.js
+│   ├── charts.js
+│   └── styles.css
+│
+├── docs/
+│   ├── README.md
+│   ├── DEPLOYMENT.md
+│   └── API.md
+│
+├── docker-compose.yml
+├── reports/
+└── package.json
